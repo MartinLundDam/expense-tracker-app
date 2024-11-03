@@ -1,3 +1,5 @@
+import org.apache.tools.ant.util.JavaEnvUtils.VERSION_11
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -6,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.example.expense_tracker_app"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.expense_tracker_app"
@@ -37,6 +39,7 @@ android {
     buildFeatures {
         compose = true
     }
+    buildToolsVersion = "34.0.0"
 }
 
 dependencies {

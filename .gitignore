@@ -16,6 +16,7 @@ local.properties
 *.class
 *.jar
 *.hprof
+.idea/vcs.xml
 
 # Keystore files
 *.jks
